@@ -13,9 +13,9 @@ env:
 jobs:
   build-infra:
     name: terraform-ci-cd
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkot
+      - name: Checkout
         uses: action/checkout@v2
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v2
