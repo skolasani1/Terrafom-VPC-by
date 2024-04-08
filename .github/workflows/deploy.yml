@@ -1,4 +1,4 @@
-name: Terraform CI CD pipeline for Deploying aws Resource
+name: Terraform CI CD pipeline for Deploying AWS Resources
 run-name: ${{ github.actor }} has triggered the pipeline
 
 on:
@@ -7,7 +7,7 @@ on:
        - 'main'
 
 env:
-  AWS_ACESS_KEY: ${{ secrets.AWS_ACCESS_KEY}}
+  AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY}}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
       
 jobs:
