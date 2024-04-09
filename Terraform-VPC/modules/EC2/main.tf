@@ -8,6 +8,6 @@ resource "aws_instance" "web" {
   availability_zone = data.aws_availability_zones.available.names[count.index]
 
   tags = {
-    Name = var.ec2_names[count.index]
+    Name = var.EC2_names[count.index]
   }
 }
