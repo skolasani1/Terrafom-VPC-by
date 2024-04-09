@@ -18,20 +18,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Set up Terraform
-        uses: hashicorp/setup-terraform@v4
+        uses: hashicorp/setup-terraform@v3
       - name: Terraform init
         id: init
         run: terraform init
-        working-directory: ./Terraform-VPC
+        working-directory: Terraform-VPC
       - name: Terraform validate
         id: validate
         run: terraform validate
-        working-directory: ./Terraform-VPC
+        working-directory: Terraform-VPC
       - name: Terraform plan
         id: plan
         run: terraform plan
-        working-directory: ./Terraform-VPC
+        working-directory: Terraform-VPC
       - name: Terraform apply
         id: apply
         run: terraform apply --auto-approve
-        working-directory: ./Terraform-VPC
+        working-directory: Terraform-VPC
