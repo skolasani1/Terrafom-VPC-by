@@ -30,7 +30,7 @@ jobs:
       - name: Terraform Plan
         id: plan
         run: terraform plan
-        working-directory: ./Terraform-VPC/modules
+        working-directory: ./Terraform-VPC
       - name: Terraform Apply
         id: apply
         run: terraform apply --auto-approve
